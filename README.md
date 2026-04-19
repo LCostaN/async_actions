@@ -35,7 +35,7 @@ Add `async_action` to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  async_action: ^0.0.1
+  async_action: ^<latest_version>
 ```
 
 ## Quick Start
