@@ -12,10 +12,9 @@ typedef AsyncActionCallback1<T, A> = Future<Result<T>> Function(A);
 /// Encapsulates an asynchronous action, exposes its running and error states,
 /// and ensures that it can't be launched again until it finishes.
 ///
-/// **Guidelines:**
-/// - **UI Reactivity**: main goal is to make actions reactive to UI changes.
-///   Not intended for background processes or repositories.
 /// - **Scoped State**: Use [ListenableBuilder] for scoped state changes.
+/// - **Named Functions**: Prefer passing named functions as the action callback
+///   instead of anonymous closures for better readability and structure.
 ///
 /// Use [AsyncAction0] for actions without arguments.
 /// Use [AsyncAction1] for actions with one argument.

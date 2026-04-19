@@ -41,11 +41,13 @@ dependencies:
 ## Quick Start
 
 ```dart
-// 1. Define your action
-final myAction = AsyncAction0<String>(() async {
+// 1. Define your action using a named function (Best Practice)
+late final myAction = AsyncAction0<String>(_doSomething);
+
+Future<Result<String>> _doSomething() async {
   await Future.delayed(const Duration(seconds: 2));
   return Result.ok("Success!");
-});
+}
 
 // 2. Use it in your UI
 AsyncActionButton.elevated(
