@@ -1,4 +1,4 @@
-## 0.0.1
+## 1.0.0
 
 - Initial release of `async_action`.
 - Added `AsyncAction`, `AsyncAction0`, and `AsyncAction1` for reactive asynchronous logic.
